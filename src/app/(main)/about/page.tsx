@@ -18,7 +18,7 @@ export default function GetStarted() {
         trading platforms. We also submitted our solutions to ScamShield.
       </p>
 
-      <p className="text-gr mt-7 font-bold text-lg max-w-[70%] max-md:max-w-full max-md:text-center">Relevant links/resources & contact information to the left sidebar and below.
+      <p className="text-gr mt-7 font-bold text-lg max-w-[70%] max-md:max-w-full max-md:text-center">Relevant links/resources & contact information to the left sidebar & below.
       
       </p>
       <div className="w-full flex max-md:justify-center mt-7 ">

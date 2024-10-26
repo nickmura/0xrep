@@ -70,10 +70,7 @@ export default function Donate({ params }: { params: { address: string } }) {
     return (
       <CustomWrapper>
         <div className="min-h-screen w-full pt-16">
-          <p className="text-gr font-bold mt-7 text-2xl max-w-[70%] max-md:max-w-full text-center">
-            Hmmm... It seems this streamer does not have a{" "}
-            <Link href="/">stream.gift</Link> account yet.
-          </p>
+
         </div>
       </CustomWrapper>
     );
