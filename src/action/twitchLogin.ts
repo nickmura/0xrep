@@ -2,7 +2,7 @@
 
 import { cookies } from 'next/headers';
 
-export default async function TwitchLogin(token: string) {
+export default async function TwitchLogin(token: string) { // TODO: REMOVE
     return new Promise((resolve, reject) => {
         fetch(process.env.BACKEND + "/login-streamer", {
             method: "POST",

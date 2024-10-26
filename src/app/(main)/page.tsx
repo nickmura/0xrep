@@ -43,19 +43,11 @@ export default function Dashboard() {
       })
   }
 
-  const [eventURL, setEventURL] = useState<string>()
   useEffect(() => {
-    if (user) setEventURL(`https://stream.gift/${user?.preferred_username}/donationEvents`);
 
-    else {
-      RecentDonations()
-        .then(res => {
-          if (res?.status !== false) {
-            setRecentDonations(res);
-          }
-        })
-    }
-  }, [user])
+
+
+  }, [])
 
   return (
     <div className="min-h-screen pt-16">

@@ -3,7 +3,7 @@
 import { TwitchUserStore } from '@/lib/states';
 import { cookies } from 'next/headers';
 
-export default async function TwitchAccountUpdate(update: TwitchUserStore) {
+export default async function TwitchAccountUpdate(update: TwitchUserStore) { // TODO REMOVE
     return new Promise(async (resolve, reject) => {
 
         let token: string | undefined = cookies().get("access-token")?.value;

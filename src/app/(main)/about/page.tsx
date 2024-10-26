@@ -13,29 +13,16 @@ export default function GetStarted() {
 
 
 
-      <p className="text-gr mt-7 font-bold text-lg max-w-[70%] max-md:max-w-full max-md:text-center">0xrep (0x-rep on GitHub) is a newly formed security project researching harm reduction solutions, and cybercrime prevention for cryptocurrency payments.</p>
+      <p className="text-gr mt-7 font-bold text-lg max-w-[70%] max-md:max-w-full max-md:text-center">0xrep <a href='https://github.com/0x-rep' target="_blank">(0x-rep on GitHub)</a> is a newly formed security project researching harm reduction solutions, and cybercrime prevention for cryptocurrency payments.</p>
       <p className="text-gr mt-7 font-bold text-lg max-w-[70%] max-md:max-w-full max-md:text-center">We started development on the project in October 2024, in Alberta, Canada, with an inspiration from the late SteamRep tool for preventing fraud and scams on Steam based
-        trading platforms.
+        trading platforms. We also submitted our solutions to ScamShield.
       </p>
 
       <p className="text-gr mt-7 font-bold text-lg max-w-[70%] max-md:max-w-full max-md:text-center">Relevant links/resources & contact information to the left sidebar and below.
       
       </p>
       <div className="w-full flex max-md:justify-center mt-7 ">
-        <ConnectButton
-          id="wallet-connect-button-2"
-          connectText={
-            <div className="flex items-center gap-3">
-              <Image
-                src="/sui.svg"
-                alt="SUI"
-                height={28}
-                width={28}
-              />
-              Connect your Wallet
-            </div>
-          }
-        />
+
       </div>
     </div>
   );

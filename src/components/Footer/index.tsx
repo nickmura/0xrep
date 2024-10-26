@@ -10,24 +10,19 @@ export default function Footer() {
             <div className="flex flex-col gap-6">
                 <div className="flex items-center gap-6 max-md:justify-center">
                     <div className="flex items-center gap-2">
-                        <Image
-                            src="/logo.svg"
-                            alt="stream.gift Logo"
-                            height={24}
-                            width={24}
-                        />
-                        <h1 className="text-lg font-bold">stream.gift</h1>
+
+                        <h1 className="text-lg font-bold">0xrep.com</h1>
                     </div>
-                    <p className="text-gr text-lg">contact@stream.gift</p>
+                    <p className="text-gr text-lg">contact@0xrep.com</p>
                 </div>
-                <p className="text-white text-lg max-w-[70%] max-md:text-center max-md:mx-auto">Support streamers via cryptocurrency. Submitted to the 
-                &nbsp;<a className='underline  transition' href='https://sui.io/overflow' target="_blank"> Sui Overflow Hackathon 2024</a></p>
+                <p className="text-white text-lg max-w-[70%] max-md:text-center max-md:mx-auto">Chain analysis tools. Submitted to
+                &nbsp;<a className='underline  transition hover:scale-[1.05]' href='https://herox.com/scamshield' target="_blank">ScamShield on HeroX</a></p>
             </div>
 
             <div>
                 <h2 className="font-medium text-2xl mb-1">Media</h2>
                 <div className="flex items-center justify-center gap-6">
-                    <a href="https://github.com/nickmura/stream.gift" target="_blank">
+                    <a href="https://github.com/0x-rep" target="_blank">
                         <Image
                             src="/github.svg"
                             alt="Github Logo"
@@ -40,7 +35,7 @@ export default function Footer() {
         </footer>
 
         <div className="my-12">
-            <p className="text-center text-gr text-lg">&copy; 2024 - Made by Receive.me Team</p>
+            <p className="text-center text-gr text-lg">&copy; 2024 - Made by NM</p>
         </div>
 
         {/* Abstract vectors */}

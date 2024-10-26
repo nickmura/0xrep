@@ -1,8 +1,8 @@
 'use server'
 
-export default async function CheckDonations(username: string): Promise<any> {
-    return new Promise(async (resolve, reject) => {
-        fetch(process.env.BACKEND + `/check_new_donations?username=${username}`)
+export default async function CheckAddress(username: string): Promise<any> {
+    return new Promise(async (resolve, reject) => { // NOTE: THIS ENDPOINT DOES NOT EXIST (CURRENTLY).
+        fetch(process.env.BACKEND + `/check-new-address?username=${username}`)
             .then(res => res.json())
             .then(res => {
                 return resolve(res);
