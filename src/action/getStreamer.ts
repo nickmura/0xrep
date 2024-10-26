@@ -1,6 +1,6 @@
 'use server'
 
-export default async function GetStreamer(streamer: string): Promise<any> {
+export default async function GetAddress(streamer: string): Promise<any> {
     return new Promise(async (resolve, reject) => {
         fetch(process.env.BACKEND + "/get-streamer" + `?username=${streamer}`)
             .then(res => res.json())

@@ -7,8 +7,8 @@ import '@mysten/dapp-kit/dist/index.css';
 const ubuntu_mono = Ubuntu_Mono({ weight: "400", variable: "--ubuntu", subsets: ["latin"] });
 
 export const metadata: Metadata = {
-    title: 'stream.gift - Twitch donates on SUI network',
-    description: 'Donate to your favorite Twitch streamer on SUI network.',
+    title: '0xrep.com',
+    description: '0xrep.com',
 }
 
 export default function RootLayout({
@@ -18,6 +18,7 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
+
             <body className={ubuntu_mono.className}>
                 {children}
             </body>

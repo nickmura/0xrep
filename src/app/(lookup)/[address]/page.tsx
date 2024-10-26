@@ -21,14 +21,15 @@ import Image from "next/image";
 import SignMessageButton from "@/components/SignMessageButton";
 import { QRCodeSVG } from "qrcode.react";
 import { b64DecodeUnicode } from "@/lib/helper";
+import GetAddress from "@/action/getStreamer";
 
 type SignedMessageResult = {
   signature: string;
   bytes: string;
 };
 
-export default function Donate({ params }: { params: { streamer: string } }) {
-  const streamer: string = params.streamer;
+export default function Donate({ params }: { params: { address: string } }) {
+  const address: string = params.address;
   const currentAccount = useCurrentAccount();
 
   const [exists, setExists] = useState<Boolean | null>(null);
@@ -50,9 +51,9 @@ export default function Donate({ params }: { params: { streamer: string } }) {
   
   useEffect(() => {
     (async () => {
-      const streamerExists: Boolean = (await StreamerExists(streamer)).status;
+      const streamerExists: Boolean = (await StreamerExists(address)).status;
       setExists(streamerExists);
-      const getStreamer = await GetStreamer(streamer);
+      const getStreamer = await GetAddress(address);
       console.log(getStreamer)
       setUser(getStreamer.user);
     })();
@@ -92,9 +93,9 @@ export default function Donate({ params }: { params: { streamer: string } }) {
     <CustomWrapper>
       <div className="min-h-screen w-full pt-16 flex flex-col items-center">
         <h1 className="font-semibold text-5xl max-w-[70%] mb-10 max-md:max-w-full text-center">
-          Donate to {streamer} on {" "}
+          Donate to {address} on {" "}
           <a
-            href={`https://twitch.tv/${streamer}`}
+            href={`https://twitch.tv/${address}`}
             target="_blank"
             className="text-[#9F44FE] underline"
           >
@@ -106,7 +107,7 @@ export default function Donate({ params }: { params: { streamer: string } }) {
           <>
             <p className="text-gr font-medium mb-7 text-2xl max-w-[70%] max-md:max-w-full text-center">
               Send a tip/donation to{" "}
-              <a href={`https://www.twitch.tv/${streamer}`}>{streamer}</a> via
+              <a href={`https://www.twitch.tv/${address}`}>{address}</a> via
               SUI! Get your donation read on stream. {mobile ? <>
               <button disabled onClick={mobileDonationModal}><b>Wanna send a donation via desktop/browser? <u>Click here.</u></b></button>
               
@@ -244,7 +245,7 @@ export default function Donate({ params }: { params: { streamer: string } }) {
             </> : <>              
             
               <button disabled
-                className="px-3 py-1 w-fit rounded-lg text-white bg-blue font-semibold text-lg opacity-60"
+                className="px-3 py-1 w-fit rounded-lg text-white bg-blue font-semibold text-lg opacity-6xrep"
                 onClick={()=>sentTransaction(amount, message)} >Send</button> 
                 
             </>}
@@ -329,7 +330,7 @@ export default function Donate({ params }: { params: { streamer: string } }) {
               )}
             </div>
 
-            <p className="mt-5 text-gr font-bold text-xl italic">Trasnsaction has been sent with the signed message to the {streamer}&#39;s address. {streamer} will receive a notification on his stream</p>
+            <p className="mt-5 text-gr font-bold text-xl italic">Trasnsaction has been sent with the signed message to the {address}&#39;s address. {address} will receive a notification on his stream</p>
 
             <div className="mt-10 border-[1px] border-gr rounded-lg">
               <div
