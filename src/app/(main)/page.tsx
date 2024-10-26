@@ -59,17 +59,19 @@ export default function Dashboard() {
             Check the rating of a given crypto address
           </p>
 
-          <input
-            placeholder="0x000..."
+          <input disabled
+
+            placeholder="0x000... (Coming soon)"
             onChange={e => setSearch(e.target.value)}
             onKeyDown={e => {
               if (e.key === "Enter")
                 router.push(`/${search}`);
+       
             }}
             className="
               w-full max-w-[800px] block p-2
               border-[1px] border-gr font-bold text-xl mt-16 rounded-md
-              placeholder:text-gr"
+              placeholder:text-gr opacity-50"
           />
 
           { recentDonations?.length ? (
