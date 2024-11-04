@@ -9,25 +9,25 @@ import { goto } from "$app/navigation";
 </script>
 
 <main>
-    <h1>ethexams.com</h1>
+    <h1>quiz.0xrep.com</h1>
     <p>
-        ETHexams is a community based, open source education initative intended to develop questionnaires (exams and quizzes) 
-        for anyone who wants to measure their learning progress, evaluate their understanding, or identify gaps in their knowledge of Ethereum. 
+        0xreps is a community based initative researching effectiveness of educational and investigative tooling in 
+        for anyone who wants to measure their learning progress, evaluate their understanding or discernment in preventing harm, or identify gaps in their knowledge of cryptocurrency. 
         Everyone is encouraged to review and submit knowledge, resources, information, and validate our resources provided, contributing to the 
         mission of this project. Our goals are to... 
     </p>
 
         <p>    
-            <li>Provide concise and educational information for Ethereum</li>
-            <li>Cover multiple aspects of knowledge for Ethereum (Transactions, consensus, cryptography, solidity, infrastructure, etc)</li>
-            <li>Provide a challenging educational resource, with dedication for providing the best quality information with the review of the community</li>
+            <li>Provide concise and educational information for preventing crypto fraud</li>
+            <li>Cover multiple aspects of knowledge for Ethereum (Transactions, Socialls, cryptography, solidity, infrastructure, etc)</li>
+            <li>Provide a insightful educational resource, with dedication for providing the best quality information with the review of the community</li>
             <li>Encourage others to submit knowledge and support the initative, aswell as provide suggestions!</li>
             <li>Provide video demonstrations and flash card style exercises for various topics and levels of understanding</li>
             <li>Provide security challenges for users for different topics!</li>
         </p>
         <p>
             <b>The resources, and references used for this project..</b>
-            <li>Mastering Ethereum by Andreas M. Antonopoulos (<a href="https://github.com/ethereumbook/ethereumbook/blob/develop/book.asciidoc"target="_blank">github version</a> or on <a href="https://www.amazon.com/Mastering-Ethereum-Building-Smart-Contracts/dp/1491971940">Amazon US</a>)</li>
+            <li>Herox.com/ScamShield (We built this Demo during the final hours of ScamShield Submission as a reference</li>
             <li><a href="https://ethereum.org/en/developers/docs/ "target="_blank">Ethereum.org</a> development documentation</li>
             <li><a href="https://docs.soliditylang.org/" target="_blank">Soliditylang.org</a> (Solidity) documentation</li>
         </p>
@@ -37,7 +37,7 @@ import { goto } from "$app/navigation";
             <i>Try a prototype of a basic comprehension test here!</i><button class='ml-3 btn btn-primary' on:click={gotoBeta}>Try beta test</button>
         </div>
         <div class="contact">
-            <p><i><b>For any details or more questions, regards to contributing, please email nickmuradev@gmail.com</b></i></p>
+            <p><i><b>For any details or more questions, regards to contributing, please email dev@nickmura.ca</b></i></p>
         </div>
 
 </main>
